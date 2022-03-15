@@ -32,7 +32,7 @@ void add_patron() {
     printf("Enter Email:");
     gets(patron.email);
     printf("Initial Password: ");
-    gets(patron.pass);
+    gets(patron.password);
     printf("Enter 1 if staff 0 otherwise: ");
     scanf("%d",&patron.is_staff);
     if(save_patron(patron))
@@ -82,7 +82,7 @@ void execute_action(int action) {
 int main()
 {
     printf("COUNTY LIBRARY SYSTEM!\n");
-    printf("Welcome Mr. Tonny!\n");
+    printf("Welcome Miss Shee!\n");
     execute_action(menu());
     return 0;
 }
